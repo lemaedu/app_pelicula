@@ -15,6 +15,11 @@ class MyApp extends StatelessWidget {
         'home': (_) => HomeScreen(),
         'details': (_) => DetailsScreen(),
       },
+      //para aplicar un tema a la app
+      theme: ThemeData.light().copyWith(
+          appBarTheme: AppBarTheme(
+        color: Colors.indigo,
+      )),
     );
   }
 }
